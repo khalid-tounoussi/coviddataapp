@@ -1,0 +1,9 @@
+http://localhost:8080/api/oneCountryData?countryName=maroc
+
+
+http://localhost:8080/api/oneCountryDataWithDate?countryName=maroc&date=2022-12-12
+
+
+http://localhost:8080/api/todayCountryData?countryName=france
+
+JACOCO
