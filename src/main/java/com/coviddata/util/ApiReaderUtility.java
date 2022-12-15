@@ -19,7 +19,7 @@ public class ApiReaderUtility {
         URL website = null;
         String FileName = "data.csv";
         File f = new File(FileName);
-//        if( !f.exists() ) {
+        if( !f.exists() ) {
             try {
                 website = new URL("https://coronavirus.politologue.com/data/coronavirus/coronacsv.aspx?format=csv&t=pays");
                 ReadableByteChannel rbc = null;
@@ -34,7 +34,7 @@ public class ApiReaderUtility {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-//        }
+        }
 
     }
 

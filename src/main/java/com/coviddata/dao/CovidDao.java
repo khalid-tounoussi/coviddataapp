@@ -39,11 +39,17 @@ public class CovidDao {
 	}
 
     public MessageDTO findByNameAndDate(String countryName, String date){
-         Message message = findByName(countryName).stream()
+        System.out.println("********************************");
+        System.out.println(findByName(countryName));
+        System.out.println("DATE :  " +  date);
+        System.out.println("********************************");
+
+        Message message = findByName(countryName).stream()
                 .filter(m -> m.getDate().equals(date))
                  .findAny()
                  .orElse(null );
          if( message  == null) {
+             System.out.println("Message is null");
              List temp = REP_MAP.get(Utility.HttpCode.REP_HTTP_DTINEXISTANT);
              throw new CustomException( (String)temp.get(1), (HttpStatus)temp.get(0));
         }

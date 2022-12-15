@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 
 import static com.coviddata.util.Utility.REP_MAP;
+import static com.coviddata.util.Utility.checkDate;
 
 @Service
 @Component
@@ -33,12 +34,10 @@ public class CovidServiceImpl implements CovidServiceInterface{
 		if( (countryName != null) && (!countryName.equals("")) && ( !countryName.matches("[a-zA-Z]+") ) )
 		{
 			temp = REP_MAP.get(Utility.HttpCode.REP_HTTP_INVALIDPARAM);
-			System.out.println("INVALID " +countryName);
 
 			throw new CustomException( (String)temp.get(1), (HttpStatus) temp.get(0));
 		}
 		List<Message> messages = dao.findByName(countryName);
-		System.out.println( "SERVICE " + messages);
 		if( messages.size() == 0 )
 		{
 			temp = REP_MAP.get(Utility.HttpCode.REP_HTTP_CNINEXISTANT);
@@ -52,6 +51,7 @@ public class CovidServiceImpl implements CovidServiceInterface{
 		List temp ;
 		if( Utility.checkDate(date) == null)
 		{
+			System.out.println("INvalid Parramètre" + Utility.checkDate(date) );
 			temp = REP_MAP.get(Utility.HttpCode.REP_HTTP_INVALIDPARAM);
 			throw new CustomException( (String) temp.get(1) ,(HttpStatus) temp.get(0));
 
@@ -60,6 +60,7 @@ public class CovidServiceImpl implements CovidServiceInterface{
 		MessageDTO messageDTO =  dao.findByNameAndDate(countryName, date);
 		if (messageDTO == null)
 		{
+			System.out.println("DATE INEXISTANTE ");
 			temp = REP_MAP.get(Utility.HttpCode.REP_HTTP_DTINEXISTANT);
 			throw new CustomException( (String) temp.get(1) ,(HttpStatus) temp.get(0));
 		}
