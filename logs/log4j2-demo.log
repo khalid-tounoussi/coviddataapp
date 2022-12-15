@@ -597,3 +597,759 @@
 2022-12-15 19:45:05.626  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-12-15 19:45:05.626  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
 2022-12-15 19:45:05.626  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 19:46:53.642  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 19:46:53.651  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 19:46:53.653  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 19:46:53.653  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 19:46:53.749  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 19:46:53.749  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1017 ms
+2022-12-15 19:46:54.301  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 19:46:54.320  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 19:46:54.510  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 19:46:54.511  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 19:46:54.512  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 19:57:05.523 ERROR DESKTOP-BRPE7R0 --- [           main] o.s.b.SpringApplication                  : Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:500)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:448)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1048)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:373)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:372)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.coviddata.CovidDataApplication.main(CovidDataApplication.java:15)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 more
+2022-12-15 20:02:07.761 ERROR DESKTOP-BRPE7R0 --- [           main] o.s.b.SpringApplication                  : Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:500)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:448)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1048)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:373)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:372)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.coviddata.CovidDataApplication.main(CovidDataApplication.java:15)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 more
+2022-12-15 20:02:15.358 ERROR DESKTOP-BRPE7R0 --- [           main] o.s.b.SpringApplication                  : Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:500)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:448)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1048)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:373)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:372)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.coviddata.CovidDataApplication.main(CovidDataApplication.java:15)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 more
+2022-12-15 20:07:02.239  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 20:07:02.247  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:07:02.250  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 20:07:02.251  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 20:07:02.331  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 20:07:02.331  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1071 ms
+2022-12-15 20:07:02.846  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:07:02.865  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 20:07:18.129  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 20:07:18.129  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 20:07:18.133  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 20:11:04.926  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 20:11:04.940  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:11:04.941  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 20:11:04.942  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-12-15 20:11:05.044  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 20:11:05.045  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1197 ms
+2022-12-15 20:11:05.358  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 20:11:05.534  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:11:05.584  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 20:11:09.907  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 20:11:09.907  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 20:11:09.917  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 10 ms
+2022-12-15 20:12:04.288  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 20:13:44.179 ERROR DESKTOP-BRPE7R0 --- [           main] o.s.b.SpringApplication                  : Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:500)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:448)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1048)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:373)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:372)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.coviddata.CovidDataApplication.main(CovidDataApplication.java:15)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 more
+2022-12-15 20:17:11.279  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 20:17:11.287  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:17:11.288  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 20:17:11.288  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-15 20:17:11.367  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 20:17:11.368  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1259 ms
+2022-12-15 20:17:12.020  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 20:17:12.157  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:17:12.219  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 20:17:25.973  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 20:17:25.973  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 20:17:25.994  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 21 ms
+2022-12-15 20:18:19.691  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 20:18:49.979  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 20:18:49.987  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:18:49.988  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 20:18:49.988  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-15 20:18:50.066  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 20:18:50.067  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1210 ms
+2022-12-15 20:18:50.690  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 20:18:50.842  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:18:50.893  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 20:18:55.013  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 20:18:55.013  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 20:18:55.019  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2022-12-15 20:19:26.710  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 20:19:48.398 ERROR DESKTOP-BRPE7R0 --- [           main] o.s.b.SpringApplication                  : Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:500)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:448)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1048)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:373)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:372)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.coviddata.CovidDataApplication.main(CovidDataApplication.java:15)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 more
+2022-12-15 20:38:21.715 ERROR DESKTOP-BRPE7R0 --- [           main] o.s.b.SpringApplication                  : Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:500)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:448)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1048)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:373)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:372)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:409)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.coviddata.CovidDataApplication.main(CovidDataApplication.java:15)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 more
+2022-12-15 20:43:17.342  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 20:43:17.355  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:43:17.357  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 20:43:17.358  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 20:43:17.470  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 20:43:17.471  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1334 ms
+2022-12-15 20:43:18.538  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:43:18.565  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 20:43:25.496  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 20:43:25.497  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 20:43:25.500  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2022-12-15 20:46:49.183  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 20:46:49.206  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:46:49.207  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 20:46:49.207  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-15 20:46:49.305  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 20:46:49.305  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1276 ms
+2022-12-15 20:46:49.748  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 20:46:50.264  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:46:50.313  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 20:47:01.930  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-6] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 20:47:01.931  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 20:47:01.945  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Completed initialization in 14 ms
+2022-12-15 20:47:02.946  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-8] o.s.a.AbstractOpenApiResource            : Init duration for springdoc-openapi is: 399 ms
+2022-12-15 21:53:40.232  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:06:17.344  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 22:06:17.360  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 22:06:17.360  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 22:06:17.361  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-15 22:06:17.444  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 22:06:17.444  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1149 ms
+2022-12-15 22:06:17.792  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:06:18.210  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 22:06:18.253  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 22:09:43.475  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:09:43.492  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:09:43.494  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:09:43.720  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:09:43.724  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:09:43.742  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@47da3952, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@51e4ccb3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@46e8a539, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@495083a0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5fd62371, org.springframework.test.context.event.EventPublishingTestExecutionListener@28a0fd6c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2b62442c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@66629f63, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@841e575, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@27a5328c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1e5f4170, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6c345c5f]
+2022-12-15 22:09:46.041  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:09:46.771  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:09:46.771  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:09:46.789  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 17 ms
+2022-12-15 22:09:47.180  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:10:38.433  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:10:38.441  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:10:38.441  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:10:38.544  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:10:38.545  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:10:38.555  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6c345c5f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b5966e1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@65e61854, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1568159, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4fcee388, org.springframework.test.context.event.EventPublishingTestExecutionListener@6f80fafe, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3af17be2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@f9879ac, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@37f21974, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5f4d427e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6e521c1e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@224b4d61]
+2022-12-15 22:10:39.863  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:10:40.318  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:10:40.318  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:10:40.332  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 14 ms
+2022-12-15 22:10:40.536  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:11:35.105  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:11:35.113  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:11:35.114  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:11:35.227  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:11:35.229  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:11:35.237  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1568159, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4fcee388, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6f80fafe, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3af17be2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@f9879ac, org.springframework.test.context.event.EventPublishingTestExecutionListener@37f21974, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5f4d427e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6e521c1e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@224b4d61, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5d5d9e5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@303e3593, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4ef27d66]
+2022-12-15 22:11:36.605  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:11:37.139  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:11:37.140  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:11:37.151  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 11 ms
+2022-12-15 22:11:37.350  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:12:23.949  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:12:23.959  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:12:23.960  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:12:24.053  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:12:24.055  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:12:24.063  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1568159, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4fcee388, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6f80fafe, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3af17be2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@f9879ac, org.springframework.test.context.event.EventPublishingTestExecutionListener@37f21974, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5f4d427e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6e521c1e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@224b4d61, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5d5d9e5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@303e3593, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4ef27d66]
+2022-12-15 22:12:25.393  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:12:25.882  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:12:25.883  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:12:25.895  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 12 ms
+2022-12-15 22:12:26.090  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:19:17.806  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 22:19:17.807  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 22:19:17.812  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2022-12-15 22:19:18.429  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-8] o.s.a.AbstractOpenApiResource            : Init duration for springdoc-openapi is: 192 ms
+2022-12-15 22:27:12.274  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:27:12.283  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:27:12.284  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:27:12.393  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:27:12.396  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:27:12.404  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@224b4d61, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5d5d9e5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@303e3593, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ef27d66, org.springframework.test.context.support.DirtiesContextTestExecutionListener@362a019c, org.springframework.test.context.event.EventPublishingTestExecutionListener@1d9bec4d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5c48c0c0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@10c8f62, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@674c583e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@25f7391e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3f23a3a0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5ab14cb9]
+2022-12-15 22:27:13.847  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:27:14.345  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:27:14.345  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:27:14.359  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 14 ms
+2022-12-15 22:27:14.589  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:28:01.787  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:28:01.800  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:28:01.801  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:28:01.896  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:28:01.898  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:28:01.908  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@224b4d61, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5d5d9e5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@303e3593, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ef27d66, org.springframework.test.context.support.DirtiesContextTestExecutionListener@362a019c, org.springframework.test.context.event.EventPublishingTestExecutionListener@1d9bec4d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5c48c0c0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@10c8f62, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@674c583e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@25f7391e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3f23a3a0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5ab14cb9]
+2022-12-15 22:28:03.278  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:28:03.753  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:28:03.753  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:28:03.763  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 10 ms
+2022-12-15 22:28:03.960  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:29:07.583  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:29:07.596  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:29:07.598  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:29:07.709  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:29:07.711  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:29:07.721  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@224b4d61, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5d5d9e5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@303e3593, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ef27d66, org.springframework.test.context.support.DirtiesContextTestExecutionListener@362a019c, org.springframework.test.context.event.EventPublishingTestExecutionListener@1d9bec4d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5c48c0c0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@10c8f62, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@674c583e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@25f7391e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3f23a3a0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5ab14cb9]
+2022-12-15 22:29:09.110  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:29:09.624  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:29:09.624  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:29:09.638  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 13 ms
+2022-12-15 22:29:09.853  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:29:30.422  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:29:30.430  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:29:30.432  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:29:30.531  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:29:30.533  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:29:30.541  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@224b4d61, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5d5d9e5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@303e3593, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ef27d66, org.springframework.test.context.support.DirtiesContextTestExecutionListener@362a019c, org.springframework.test.context.event.EventPublishingTestExecutionListener@1d9bec4d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5c48c0c0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@10c8f62, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@674c583e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@25f7391e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3f23a3a0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5ab14cb9]
+2022-12-15 22:29:31.894  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:29:32.393  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:29:32.393  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:29:32.404  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 11 ms
+2022-12-15 22:29:32.577  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:30:12.797  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:30:12.830  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:30:12.833  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:30:13.234  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:30:13.241  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:30:13.269  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6c345c5f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b5966e1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@65e61854, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1568159, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4fcee388, org.springframework.test.context.event.EventPublishingTestExecutionListener@6f80fafe, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3af17be2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@f9879ac, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@37f21974, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5f4d427e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6e521c1e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@224b4d61]
+2022-12-15 22:30:16.276  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:30:17.270  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:30:17.270  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:30:17.288  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 18 ms
+2022-12-15 22:30:17.732  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:31:00.960  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:31:00.972  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:31:00.973  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:31:01.142  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:31:01.145  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:31:01.160  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6b5966e1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@65e61854, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1568159, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4fcee388, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6f80fafe, org.springframework.test.context.event.EventPublishingTestExecutionListener@3af17be2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@f9879ac, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@37f21974, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f4d427e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6e521c1e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@224b4d61, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5d5d9e5]
+2022-12-15 22:31:03.182  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:31:03.927  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:31:03.928  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:31:03.944  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 16 ms
+2022-12-15 22:31:04.302  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:31:26.817  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:31:26.826  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:31:26.827  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:31:26.961  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:31:26.965  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:31:26.980  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@224b4d61, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5d5d9e5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@303e3593, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ef27d66, org.springframework.test.context.support.DirtiesContextTestExecutionListener@362a019c, org.springframework.test.context.event.EventPublishingTestExecutionListener@1d9bec4d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5c48c0c0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@10c8f62, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@674c583e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@25f7391e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3f23a3a0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5ab14cb9]
+2022-12-15 22:31:28.950  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:31:29.761  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:31:29.761  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:31:29.783  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 21 ms
+2022-12-15 22:31:30.150  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:33:34.313  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:33:34.322  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:33:34.323  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:33:34.411  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:33:34.480  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:33:34.488  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@74d7184a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@51b01960, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6831d8fd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@27dc79f7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6b85300e, org.springframework.test.context.event.EventPublishingTestExecutionListener@3aaf4f07, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5cbf9e9f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@18e8473e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5a2f016d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1a38ba58, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3ad394e6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6058e535]
+2022-12-15 22:33:36.550  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:33:37.426 ERROR DESKTOP-BRPE7R0 --- [           main] o.s.t.c.TestContextManager               : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@27dc79f7] to prepare test instance [com.coviddata.coviddata.controller.CovidControllerTest@c754401]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.coviddata.coviddata.controller.CovidControllerTest': Unsatisfied dependency expressed through field 'mockMvc'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.test.web.servlet.MockMvc' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:392)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.test.web.servlet.MockMvc' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 69 more
+2022-12-15 22:33:37.474  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:35:59.369  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:35:59.376  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:35:59.376  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:35:59.474  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:35:59.476  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:35:59.483  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5f4d427e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e521c1e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@224b4d61, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5d5d9e5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@303e3593, org.springframework.test.context.event.EventPublishingTestExecutionListener@4ef27d66, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@362a019c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1d9bec4d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5c48c0c0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@10c8f62, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@674c583e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@25f7391e]
+2022-12-15 22:36:00.874  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:36:01.344  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:36:01.344  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:36:01.357  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 13 ms
+2022-12-15 22:36:01.519  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:40:05.255  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:40:05.263  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:40:05.264  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:40:05.381  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:40:05.439  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:40:05.446  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@408b35bf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@29ad44e3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@15bcf458, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5af9926a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@43c67247, org.springframework.test.context.event.EventPublishingTestExecutionListener@fac80, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@726386ed, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@649f2009, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@14bb2297, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@69adf72c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@797501a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1a15b789]
+2022-12-15 22:40:07.426  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:40:08.263  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:40:08.263  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:40:08.275  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 12 ms
+2022-12-15 22:40:08.465  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:42:31.364  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:42:31.371  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:42:31.372  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:42:31.469  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:42:31.537  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:42:31.543  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@408b35bf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@29ad44e3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@15bcf458, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5af9926a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@43c67247, org.springframework.test.context.event.EventPublishingTestExecutionListener@fac80, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@726386ed, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@649f2009, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@14bb2297, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@69adf72c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@797501a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1a15b789]
+2022-12-15 22:42:36.495  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:42:39.461  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:42:39.462  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:42:39.497  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 34 ms
+2022-12-15 22:42:40.279  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:44:21.873  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:44:21.889  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:44:21.891  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:44:22.117  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:44:22.236  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:44:22.248  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@71e9a896, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b9267b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@408b35bf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@29ad44e3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@15bcf458, org.springframework.test.context.event.EventPublishingTestExecutionListener@5af9926a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@43c67247, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@fac80, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@726386ed, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@649f2009, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@14bb2297, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@69adf72c]
+2022-12-15 22:44:25.347  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:44:26.724  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-12-15 22:44:26.725  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2022-12-15 22:44:26.748  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 23 ms
+2022-12-15 22:44:27.050  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:55:09.525  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.coviddata.coviddata.controller.CovidControllerTest], using SpringBootContextLoader
+2022-12-15 22:55:09.535  INFO DESKTOP-BRPE7R0 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.coviddata.coviddata.controller.CovidControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-15 22:55:09.536  INFO DESKTOP-BRPE7R0 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.coviddata.coviddata.controller.CovidControllerTest]: CovidControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-12-15 22:55:09.641  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.coviddata.CovidDataApplication for test class com.coviddata.coviddata.controller.CovidControllerTest
+2022-12-15 22:55:09.643  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-15 22:55:09.650  INFO DESKTOP-BRPE7R0 --- [           main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9635fa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@53ab0286, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@63c5efee, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2d10e0b1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1c98290c, org.springframework.test.context.event.EventPublishingTestExecutionListener@172ca72b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5bda80bf, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@71e5f61d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2ce86164, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5e8f9e2d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@51df223b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@fd46303]
+2022-12-15 22:55:10.402  WARN DESKTOP-BRPE7R0 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'covidController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.coviddata.service.CovidServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-12-15 22:55:10.406  INFO DESKTOP-BRPE7R0 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-15 22:55:10.443 ERROR DESKTOP-BRPE7R0 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in com.coviddata.controller.CovidController required a bean of type 'com.coviddata.service.CovidServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.coviddata.service.CovidServiceImpl' in your configuration.
+
+2022-12-15 22:55:10.576  WARN DESKTOP-BRPE7R0 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'covidController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.coviddata.service.CovidServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-12-15 22:55:10.577  INFO DESKTOP-BRPE7R0 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-15 22:55:10.589 ERROR DESKTOP-BRPE7R0 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in com.coviddata.controller.CovidController required a bean of type 'com.coviddata.service.CovidServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.coviddata.service.CovidServiceImpl' in your configuration.
+
+2022-12-15 22:55:10.589 ERROR DESKTOP-BRPE7R0 --- [           main] o.s.t.c.TestContextManager               : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2d10e0b1] to prepare test instance [com.coviddata.coviddata.controller.CovidControllerTest@1b1c538d]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'covidController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.coviddata.service.CovidServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 66 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.coviddata.service.CovidServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 85 more
+2022-12-15 22:59:16.265  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'

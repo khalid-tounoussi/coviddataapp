@@ -2,6 +2,7 @@ package com.coviddata.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.apache.commons.csv.CSVRecord;
 
@@ -12,6 +13,7 @@ import static java.lang.StrictMath.abs;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@EqualsAndHashCode
 public class MessageDTO implements Serializable {
     private String date;
     private String countryName;
