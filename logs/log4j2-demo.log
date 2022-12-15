@@ -1353,3 +1353,12 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
 	... 85 more
 2022-12-15 22:59:16.265  INFO DESKTOP-BRPE7R0 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:59:20.954  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 22:59:20.973  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 22:59:20.974  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 22:59:20.974  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-15 22:59:21.065  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 22:59:21.066  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 999 ms
+2022-12-15 22:59:24.322  INFO DESKTOP-BRPE7R0 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-15 22:59:24.731  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 22:59:24.757  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
