@@ -7,7 +7,6 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 
-
 public class Utility {
     public enum HttpCode {
         REP_HTTP_CNABSENT,
@@ -17,36 +16,36 @@ public class Utility {
         REP_HTTP_DTINEXISTANT,
         REP_HTTP_IOEXCEPTION
     }
+
     public static final List buildRep(HttpStatus c, String m) {
         List l = new ArrayList<>();
-        l.add(c); l.add(m);
+        l.add(c);
+        l.add(m);
         return l;
     }
+
     public static final Map<HttpCode, List> REP_MAP = new HashMap<>();
 
     static {
-        REP_MAP.put(HttpCode.REP_HTTP_CNABSENT, buildRep(HttpStatus.BAD_REQUEST,"Paramètre 'countryName' est obligatoire"));
-        REP_MAP.put(HttpCode.REP_HTTP_INVALIDPARAM, buildRep(HttpStatus.BAD_REQUEST,"Paramètre mal formaté"));
-        REP_MAP.put(HttpCode.REP_HTTP_CNINEXISTANT, buildRep(HttpStatus.OK,"Pays inéxistant"));
-        REP_MAP.put(HttpCode.REP_HTTP_DTABSENT, buildRep(HttpStatus.BAD_REQUEST,"Paramètre 'date' est obligatoire"));
-        REP_MAP.put(HttpCode.REP_HTTP_DTINEXISTANT, buildRep(HttpStatus.OK,"Les données pour cette date sont inéxistants."));
-        REP_MAP.put(HttpCode.REP_HTTP_IOEXCEPTION, buildRep(HttpStatus.INTERNAL_SERVER_ERROR,"Impossible de récupérer les données."));
+        REP_MAP.put(HttpCode.REP_HTTP_CNABSENT, buildRep(HttpStatus.BAD_REQUEST, "Paramètre 'countryName' est obligatoire"));
+        REP_MAP.put(HttpCode.REP_HTTP_INVALIDPARAM, buildRep(HttpStatus.BAD_REQUEST, "Paramètre mal formaté"));
+        REP_MAP.put(HttpCode.REP_HTTP_CNINEXISTANT, buildRep(HttpStatus.OK, "Pays inéxistant"));
+        REP_MAP.put(HttpCode.REP_HTTP_DTABSENT, buildRep(HttpStatus.BAD_REQUEST, "Paramètre 'date' est obligatoire"));
+        REP_MAP.put(HttpCode.REP_HTTP_DTINEXISTANT, buildRep(HttpStatus.OK, "Les données pour cette date sont inéxistants."));
+        REP_MAP.put(HttpCode.REP_HTTP_IOEXCEPTION, buildRep(HttpStatus.INTERNAL_SERVER_ERROR, "Impossible de récupérer les données."));
     }
 
 
     public static String reformatDate(String inDate) {
-        if (inDate == null)
-            return null;
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        if (inDate.trim().length() != dateFormat.toPattern().length())
-            return null;
-        dateFormat.setLenient(false);
-        try {
-            dateFormat.parse(inDate.trim());
-        } catch (ParseException pe) {
-            return null;
-        }
-    return inDate;
+        String[] date = inDate.split("-");
+
+        String year = date[0];
+        String month = date[1];
+        String day = date[2];
+
+        if (month.length() == 1) month = "0" + month;
+        if (day.length() == 1) day = "0" + day;
+        return year + "-" + month + "-" + day;
     }
 
     public static boolean isValidDate(String inDate) {
@@ -59,18 +58,17 @@ public class Utility {
             return false;
         dateFormat.setLenient(false);
         try {
-            //parse the inDate parameter
             dateFormat.parse(inDate.trim());
-        }
-        catch (ParseException pe) {
+        } catch (ParseException pe) {
             return false;
         }
         return true;
     }
-    public static String checkDate(String date){
-        if( isValidDate(date))
-        {
-            return reformatDate(date);
+
+    public static String checkDate(String date) {
+        date = reformatDate(date);
+        if (isValidDate(date)) {
+            return date;
         }
         return null;
 
