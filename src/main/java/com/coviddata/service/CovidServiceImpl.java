@@ -30,12 +30,15 @@ public class CovidServiceImpl implements CovidServiceInterface{
 	@Override
 	public List<Message> getDataCountryByName(String countryName) {
 		List temp;
-		if( (countryName != null) && (!countryName.equals("")) && (countryName.matches("^[a-zA-Z]*$")) )
+		if( (countryName != null) && (!countryName.equals("")) && ( !countryName.matches("[a-zA-Z]+") ) )
 		{
 			temp = REP_MAP.get(Utility.HttpCode.REP_HTTP_INVALIDPARAM);
+			System.out.println("INVALID " +countryName);
+
 			throw new CustomException( (String)temp.get(1), (HttpStatus) temp.get(0));
 		}
-			List<Message> messages = dao.findByName(countryName);
+		List<Message> messages = dao.findByName(countryName);
+		System.out.println( "SERVICE " + messages);
 		if( messages.size() == 0 )
 		{
 			temp = REP_MAP.get(Utility.HttpCode.REP_HTTP_CNINEXISTANT);

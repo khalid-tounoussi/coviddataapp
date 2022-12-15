@@ -25,6 +25,7 @@ public class CovidController {
 
     @GetMapping("/oneCountryData")
     List<Message> getDataCountryByName(@RequestParam String countryName) {
+        System.out.println(countryName);
         return service.getDataCountryByName(countryName);
     }
 
@@ -45,7 +46,7 @@ public class CovidController {
 
     @ExceptionHandler({Exception.class})
     public ResponseEntity handleException(Exception e) {
-
+        System.out.println( "EXCEPTION HANDLER " + e + ": " + e.getMessage());
         Map<String, String> data = new HashMap<>( );
         List temp;
         data.put( "message", e.getMessage() );
@@ -62,10 +63,6 @@ public class CovidController {
         } else if (e instanceof CustomException) {
             return ResponseEntity.status(((CustomException) e).getStatus()).body(data);
         }
-
-
-
-
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(data);
     }
 }

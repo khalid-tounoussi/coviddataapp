@@ -24,15 +24,18 @@ public class CovidDao {
     }
 
     public List<Message> findByName( String countryName){
+        System.out.println(countryName);
         List<Message> messages = data.stream()
                 .filter(m -> m.getCountryName().toLowerCase().equals(countryName.toLowerCase()))
                 .collect(Collectors.toList());
-        if( messages.size() ==0 ){
+        System.out.println(messages);
+
+        if( messages != null && messages.size() ==0 ){
             List temp = REP_MAP.get(Utility.HttpCode.REP_HTTP_CNINEXISTANT);
             throw new CustomException( (String)temp.get(1), (HttpStatus)temp.get(0));
         }
-
-                return messages;
+        System.out.println("DAO " + messages);
+        return messages;
 	}
 
     public MessageDTO findByNameAndDate(String countryName, String date){

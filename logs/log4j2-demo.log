@@ -1,0 +1,577 @@
+2022-12-15 09:29:01.316  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:29:01.322  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:29:01.323  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:29:01.324  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:29:01.405  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:29:01.405  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 689 ms
+2022-12-15 09:29:01.719  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:29:01.734  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:29:10.945  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:29:10.946  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:29:10.948  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 09:29:42.957  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:29:42.965  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:29:42.967  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:29:42.968  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:29:43.038  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:29:43.038  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 715 ms
+2022-12-15 09:29:43.353  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:29:43.368  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:29:46.935  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:29:46.935  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:29:46.936  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 09:30:39.764  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:30:39.771  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:30:39.773  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:30:39.774  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:30:39.849  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:30:39.849  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 721 ms
+2022-12-15 09:30:40.171  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:30:40.187  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:30:50.121  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:30:50.121  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:30:50.122  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 09:31:13.159  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:31:13.167  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:31:13.168  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:31:13.168  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:31:13.236  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:31:13.237  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 721 ms
+2022-12-15 09:31:13.554  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:31:13.570  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:31:17.716  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:31:17.717  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:31:17.717  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 09:37:46.413  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:37:46.419  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:37:46.420  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:37:46.421  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:37:46.483  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:37:46.483  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 837 ms
+2022-12-15 09:37:46.843  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:37:46.857  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:38:04.445  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:38:04.446  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:38:04.448  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 09:41:57.372  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:41:57.382  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:41:57.383  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:41:57.384  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:41:57.476  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:41:57.477  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1362 ms
+2022-12-15 09:41:57.985  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:41:58.005  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:42:04.474  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:42:04.474  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:42:04.475  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 09:43:28.863  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:43:28.872  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:43:28.873  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:43:28.874  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:43:28.969  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:43:28.969  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1086 ms
+2022-12-15 09:43:29.430  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:43:29.446  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:43:34.334  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:43:34.334  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:43:34.335  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 09:44:34.471  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:44:34.478  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:44:34.480  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:44:34.480  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:44:34.553  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:44:34.554  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 779 ms
+2022-12-15 09:44:34.956  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:44:34.975  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:44:36.690  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:44:36.690  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:44:36.691  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 09:46:53.901  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:46:53.910  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:46:53.911  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:46:53.911  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:46:53.976  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:46:53.977  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 748 ms
+2022-12-15 09:46:54.569  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:46:54.586  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:47:02.673  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:47:02.684  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:47:02.685  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:47:02.686  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:47:02.748  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:47:02.749  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 798 ms
+2022-12-15 09:47:03.216  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:47:03.230  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:47:06.237  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:47:06.238  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:47:06.238  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 09:49:57.165  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:49:57.171  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:49:57.172  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:49:57.172  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:49:57.235  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:49:57.235  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 746 ms
+2022-12-15 09:49:57.607  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:49:57.621  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:50:20.151  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:50:20.151  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:50:20.153  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 09:52:25.443  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:52:25.449  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:52:25.450  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:52:25.450  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:52:25.514  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:52:25.514  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 747 ms
+2022-12-15 09:52:25.885  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:52:25.898  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:52:28.709  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:52:28.710  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:52:28.710  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 09:53:38.635  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:53:38.641  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:53:38.642  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:53:38.642  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:53:38.703  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:53:38.703  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 751 ms
+2022-12-15 09:53:39.067  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:53:39.082  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:53:42.681  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:53:42.682  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:53:42.682  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 09:56:36.600  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 09:56:36.607  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:56:36.608  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 09:56:36.608  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 09:56:36.669  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 09:56:36.669  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 745 ms
+2022-12-15 09:56:37.054  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 09:56:37.069  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 09:56:43.665  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 09:56:43.665  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 09:56:43.667  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 10:26:16.644  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 10:26:16.657  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 10:26:16.659  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 10:26:16.659  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 10:26:16.766  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 10:26:16.766  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1119 ms
+2022-12-15 10:26:17.306  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 10:26:17.325  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 10:26:20.929  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 10:26:20.929  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 10:26:20.930  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 10:56:02.763  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 10:56:02.771  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 10:56:02.772  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 10:56:02.773  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 10:56:02.853  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 10:56:02.853  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1022 ms
+2022-12-15 10:56:03.330  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 10:56:03.348  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 10:56:08.817  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 10:56:08.818  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 10:56:08.819  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 10:57:06.849  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 10:57:06.860  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 10:57:06.861  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 10:57:06.862  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 10:57:07.006  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 10:57:07.006  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1245 ms
+2022-12-15 10:57:07.526  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 10:57:07.545  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 10:57:07.857  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 10:57:07.858  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 10:57:07.859  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 10:57:29.494  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 10:57:29.501  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 10:57:29.504  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 10:57:29.504  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 10:57:29.594  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 10:57:29.594  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1024 ms
+2022-12-15 10:57:30.075  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 10:57:30.095  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 10:57:49.526  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 10:57:49.527  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 10:57:49.528  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 11:12:01.894  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 11:12:01.902  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:12:01.904  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 11:12:01.905  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 11:12:01.989  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 11:12:01.990  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 989 ms
+2022-12-15 11:12:02.489  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:12:02.508  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 11:12:05.230  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 11:12:05.231  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 11:12:05.232  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 11:12:33.692  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 11:12:33.700  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:12:33.701  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 11:12:33.702  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 11:12:33.792  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 11:12:33.792  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1051 ms
+2022-12-15 11:12:34.314  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:12:34.333  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 11:13:13.076  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 11:13:13.076  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 11:13:13.076  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 11:18:19.410  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 11:18:19.419  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:18:19.420  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 11:18:19.421  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 11:18:19.504  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 11:18:19.505  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1083 ms
+2022-12-15 11:18:20.060  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:18:20.084  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 11:18:24.796  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 11:18:24.797  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 11:18:24.798  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 11:21:29.377  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 11:21:29.398  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:21:29.400  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 11:21:29.401  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 11:21:29.521  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 11:21:29.522  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1471 ms
+2022-12-15 11:21:30.082  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:21:30.101  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 11:21:30.485  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 11:21:30.485  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 11:21:30.486  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 11:25:54.440  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 11:25:54.448  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:25:54.450  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 11:25:54.450  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 11:25:54.546  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 11:25:54.546  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1210 ms
+2022-12-15 11:25:55.075  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:25:55.094  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 11:26:04.431  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 11:26:04.431  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 11:26:04.432  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 11:26:34.207  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 11:26:34.220  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:26:34.223  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 11:26:34.224  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 11:26:34.332  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 11:26:34.333  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1177 ms
+2022-12-15 11:26:34.908  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:26:34.926  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 11:26:52.342  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 11:26:52.353  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:26:52.356  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 11:26:52.357  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 11:26:52.520  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 11:26:52.520  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1220 ms
+2022-12-15 11:26:53.177  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:26:53.197  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 11:28:38.752  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 11:28:38.753  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 11:28:38.754  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 11:31:47.147  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 11:31:47.156  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:31:47.158  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 11:31:47.159  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 11:31:47.256  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 11:31:47.257  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1163 ms
+2022-12-15 11:31:47.817  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:31:47.837  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 11:31:52.962  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 11:31:52.962  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 11:31:52.963  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 11:34:35.919  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 11:34:35.928  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:34:35.929  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 11:34:35.930  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 11:34:36.035  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 11:34:36.036  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1134 ms
+2022-12-15 11:34:36.572  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 11:34:36.592  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 11:35:17.061  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 11:35:17.062  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 11:35:17.064  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 13:39:25.069  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 13:39:25.092  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 13:39:25.094  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 13:39:25.095  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 13:39:25.294  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 13:39:25.295  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2840 ms
+2022-12-15 13:39:26.287  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 13:39:26.338  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 13:39:26.492  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 13:39:26.493  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 13:39:26.495  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2022-12-15 15:05:30.135  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:05:30.143  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:05:30.144  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:05:30.145  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:05:30.224  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:05:30.224  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 795 ms
+2022-12-15 15:05:30.575  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:05:30.590  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:05:35.619  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:05:35.620  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:05:35.620  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 15:06:43.042  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:06:43.048  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:06:43.049  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:06:43.049  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:06:43.108  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:06:43.109  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 724 ms
+2022-12-15 15:06:43.457  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:06:43.470  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:06:48.949  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:06:48.949  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:06:48.950  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 15:09:15.859  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:09:15.870  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:09:15.871  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:09:15.872  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:09:15.940  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:09:15.941  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 859 ms
+2022-12-15 15:09:21.530  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:09:21.536  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:09:21.537  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:09:21.537  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:09:21.598  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:09:21.599  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 727 ms
+2022-12-15 15:09:21.960  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:09:21.973  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:09:27.475  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:09:27.475  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:09:27.476  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 15:11:16.427  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:11:16.440  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:11:16.441  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:11:16.441  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:11:16.510  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:11:16.510  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 885 ms
+2022-12-15 15:11:16.945  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:11:16.959  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:11:20.646  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:11:20.646  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:11:20.647  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 15:13:24.601  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:13:24.607  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:13:24.608  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:13:24.608  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:13:24.666  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:13:24.666  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 735 ms
+2022-12-15 15:13:25.018  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:13:25.031  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:14:04.555  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:14:04.556  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:14:04.557  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 15:15:25.580  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:15:25.599  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:15:25.601  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:15:25.602  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:15:25.701  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:15:25.702  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1090 ms
+2022-12-15 15:15:26.312  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:15:26.335  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:15:27.022  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:15:27.022  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:15:27.023  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 15:16:48.154  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:16:48.160  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:16:48.161  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:16:48.161  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:16:48.220  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:16:48.221  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 784 ms
+2022-12-15 15:16:48.582  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:16:48.596  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:16:58.116  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:16:58.117  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:16:58.119  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2022-12-15 15:18:31.400  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:18:31.406  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:18:31.407  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:18:31.408  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:18:31.467  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:18:31.467  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 726 ms
+2022-12-15 15:18:31.841  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:18:31.856  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:18:33.496  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:18:33.496  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:18:33.497  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 15:18:49.201  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:18:49.208  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:18:49.210  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:18:49.210  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:18:49.291  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:18:49.291  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 800 ms
+2022-12-15 15:18:49.713  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:18:49.729  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:18:50.807  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:18:50.807  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:18:50.808  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 15:21:20.651  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:21:20.658  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:21:20.660  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:21:20.660  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:21:20.729  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:21:20.729  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 867 ms
+2022-12-15 15:21:21.105  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:21:21.122  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:21:22.708  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:21:22.708  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:21:22.709  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 15:39:06.457  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:39:06.464  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:39:06.466  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:39:06.466  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:39:06.535  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:39:06.535  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 736 ms
+2022-12-15 15:39:06.881  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:39:06.894  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:42:02.562  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:42:02.569  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:42:02.570  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:42:02.570  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:42:02.631  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:42:02.632  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 827 ms
+2022-12-15 15:42:02.980  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:42:02.999  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:42:06.185  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:42:06.185  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:42:06.186  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 15:51:18.279  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:51:18.285  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:51:18.286  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:51:18.286  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:51:18.351  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:51:18.351  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 763 ms
+2022-12-15 15:51:18.751  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:51:18.765  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:51:22.557  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:51:22.557  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:51:22.558  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 15:52:40.768  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:52:40.775  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:52:40.775  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:52:40.776  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:52:40.837  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:52:40.837  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 720 ms
+2022-12-15 15:52:41.212  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:52:41.226  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:52:53.790  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:52:53.791  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:52:53.791  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 15:53:11.104  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 15:53:11.110  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:53:11.111  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 15:53:11.112  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 15:53:11.175  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 15:53:11.176  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 782 ms
+2022-12-15 15:53:11.554  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 15:53:11.567  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 15:53:13.061  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 15:53:13.062  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 15:53:13.062  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 18:14:15.153  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 18:14:15.162  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:14:15.163  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 18:14:15.163  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 18:14:15.244  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 18:14:15.244  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1020 ms
+2022-12-15 18:14:15.668  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:14:15.686  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 18:14:21.796  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:14:21.796  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:14:21.796  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 18:15:36.244  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 18:15:36.258  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:15:36.259  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 18:15:36.259  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 18:15:36.336  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 18:15:36.337  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 864 ms
+2022-12-15 18:15:36.763  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:15:36.778  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 18:15:51.557  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 18:15:51.563  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:15:51.565  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 18:15:51.565  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 18:15:51.638  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 18:15:51.638  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 844 ms
+2022-12-15 18:15:52.117  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:15:52.132  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 18:15:53.481  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:15:53.481  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:15:53.482  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 18:16:19.988  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 18:16:19.995  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:16:19.996  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 18:16:19.996  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 18:16:20.061  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 18:16:20.062  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 820 ms
+2022-12-15 18:16:20.502  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:16:20.518  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 18:16:22.922  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:16:22.922  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:16:22.923  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 18:18:17.577  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 18:18:17.583  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:18:17.584  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 18:18:17.584  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 18:18:17.652  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 18:18:17.652  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 794 ms
+2022-12-15 18:18:18.098  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:18:18.113  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 18:18:20.460  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:18:20.460  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:18:20.461  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 18:20:26.953  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 18:20:26.960  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:20:26.961  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 18:20:26.961  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 18:20:27.028  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 18:20:27.029  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 834 ms
+2022-12-15 18:20:27.446  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:20:27.464  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 18:20:29.815  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:20:29.815  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:20:29.816  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 18:20:51.843  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 18:20:51.853  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:20:51.854  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 18:20:51.855  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 18:20:51.924  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 18:20:51.925  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 959 ms
+2022-12-15 18:20:52.387  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:20:52.404  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 18:20:52.501  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:20:52.501  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:20:52.502  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 18:22:05.376  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 18:22:05.386  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:22:05.387  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 18:22:05.387  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 18:22:05.452  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 18:22:05.452  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 771 ms
+2022-12-15 18:22:05.850  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:22:05.866  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 18:22:10.264  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:22:10.265  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:22:10.266  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-12-15 18:22:34.233  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 18:22:34.239  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:22:34.240  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 18:22:34.240  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 18:22:34.314  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 18:22:34.315  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 817 ms
+2022-12-15 18:22:34.745  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:22:34.761  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 18:22:38.743  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:22:38.743  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:22:38.744  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-12-15 18:23:19.316  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 18:23:19.322  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:23:19.324  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-15 18:23:19.324  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-15 18:23:19.387  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-15 18:23:19.387  INFO DESKTOP-BRPE7R0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 795 ms
+2022-12-15 18:23:19.814  INFO DESKTOP-BRPE7R0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 18:23:19.832  INFO DESKTOP-BRPE7R0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 18:23:22.034  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:23:22.034  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:23:22.035  INFO DESKTOP-BRPE7R0 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
