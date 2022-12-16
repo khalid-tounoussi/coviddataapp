@@ -13,8 +13,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * The type Api reader utility.
+ */
 public class ApiReaderUtility {
 
+    /**
+     * Save csv.
+     */
     public static void saveCSV() {
         URL website = null;
         String FileName = "data.csv";
@@ -38,8 +44,12 @@ public class ApiReaderUtility {
 
     }
 
+    /**
+     * Read csv list.
+     *
+     * @return the list
+     */
     public static List<Message> readCSV() {
-        saveCSV();
         List<Message> data = new ArrayList<Message>();
         Reader in = null;
         try {

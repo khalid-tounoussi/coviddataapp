@@ -1,4 +1,4 @@
-package com.coviddata.coviddata.controller;
+package com.coviddata.coviddata.service;
 
 import com.coviddata.controller.CovidController;
 import com.coviddata.model.Message;
@@ -24,30 +24,38 @@ import static org.junit.Assert.*;
  * @since <pre>Dec 15, 2022</pre>
  */
 //@WebMvcTest(CovidController.class)
-@SpringBootTest
 @AutoConfigureMockMvc
-public class CovidControllerTest {
-    @Autowired
-    CovidController controller ;
+@SpringBootTest
+public class CovidServiceImplTest {
 
     @Autowired
     CovidServiceImpl service;
 
     /**
-     * Method: getDataCountryByName(@RequestParam String countryName)
+     * Method: getAll()
      */
     @Test
-    public void testGetDataCountryValidName() throws Exception {
-        controller.setService(service);
-        List<Message> response = controller.getDataCountryByName("maroc");
+    public void testGetAll() throws Exception {
+        List<Message> messages = service.getAll();
+        assertTrue( messages.size() >= 50);
+    }
+
+    /**
+     * Method: getDataCountryByName(String countryName)
+     */
+    @Test
+    public void testGetDataCountryByName() throws Exception {
+        List<Message> response = service.getDataCountryByName("maroc");
         assertTrue(response.size() > 10);
     }
 
+    /**
+     * Method: getDataCountryByName(String countryName)
+     */
     @Test
-    public void testGetDataCountryInValidName() throws Exception {
-        controller.setService(service);
+    public void testGetDataCountryInvalidName() throws Exception {
         Exception exception = assertThrows(Exception.class, () -> {
-            controller.getDataCountryByName("essaouira");
+            service.getDataCountryByName("essaouira");
         });
         String expectedMessage = "Pays inéxistant";
         String actualMessage = exception.getMessage();
@@ -55,21 +63,22 @@ public class CovidControllerTest {
     }
 
     /**
-     * Method: getDataCountryByNameAndDate(@RequestParam String countryName, @RequestParam String date)
+     * Method: getDataCountryByNameAndDate(String countryName, String date)
      */
     @Test
     public void testGetDataCountryByNameAndDate() throws Exception {
-        controller.setService(service);
-        MessageDTO messageDTO = controller.getDataCountryByNameAndDate("maroc", "2022-12-10");
+        MessageDTO messageDTO = service.getDataCountryByNameAndDate("maroc", "2022-12-10");
         assertEquals(messageDTO.getCountryName().toLowerCase(), "maroc");
         assertEquals(messageDTO.getDate(), "2022-12-10");
     }
 
+    /**
+     * Method: getDataCountryByNameAndDate(String countryName, String date)
+     */
     @Test
     public void testGetDataCountryByNameWithInvalidDate() throws Exception {
-        controller.setService(service);
         Exception exception = assertThrows(Exception.class, () -> {
-                    MessageDTO messageDTO = controller.getDataCountryByNameAndDate("maroc", "20K2-D2-1F");
+            MessageDTO messageDTO = service.getDataCountryByNameAndDate("maroc", "20K2-D2-1F");
         });
         String expectedMessage = "Paramètre mal formaté";
         String actualMessage = exception.getMessage();
@@ -77,26 +86,15 @@ public class CovidControllerTest {
     }
 
     /**
-     * Method: getTodayCountryData(@RequestParam String countryName)
+     * Method: getDataCountryByNameToday(String countryName)
      */
     @Test
-    public void testGetTodayCountryData() throws Exception {
-        controller.setService(service);
+    public void testGetDataCountryByNameToday() throws Exception {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDateTime now = LocalDateTime.now();
-        MessageDTO messageDTO = controller.getTodayCountryData("maroc");
+        MessageDTO messageDTO = service.getDataCountryByNameToday("maroc");
         assertEquals(messageDTO.getCountryName().toLowerCase(), "maroc");
         assertEquals(messageDTO.getDate(), dtf.format(now));
-    }
-
-    /**
-     * Method: readCsvFile()
-     */
-    @Test
-    public void testReadCsvFile() throws Exception {
-        controller.setService(service);
-        List<Message> messages = controller.readCsvFile();
-        assertTrue(messages.size() >= 50);
     }
 
 

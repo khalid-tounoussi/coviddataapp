@@ -3,7 +3,6 @@ package com.coviddata.service;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-
 import com.coviddata.dao.CovidDao;
 import com.coviddata.exception.CustomException;
 import com.coviddata.model.Message;
@@ -13,30 +12,68 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.MissingServletRequestParameterException;
 
 import static com.coviddata.util.Utility.REP_MAP;
 import static com.coviddata.util.Utility.checkDate;
 
+/**
+ * The type Covid service.
+ */
 @Service
 @Component
 public class CovidServiceImpl implements CovidServiceInterface{
+	/**
+	 * The Dao.
+	 */
 	@Autowired
 	CovidDao dao;
 
+	/**
+	 * Get all list.
+	 *
+	 * @return the list
+	 */
 	public List<Message> getAll(){
 		return dao.findAll();
 	}
 
-	@Override
-	public List<Message> getDataCountryByName(String countryName) {
+	/**
+	 * Only letters spaces boolean.
+	 *
+	 * @param s the s
+	 * @return the boolean
+	 */
+	public static boolean onlyLettersSpaces(String s){
+		for(int i=0;i<s.length();i++){
+			char ch = s.charAt(i);
+			if (Character.isLetter(ch) || ch == ' ') {
+				continue;
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * Check country name.
+	 *
+	 * @param countryName the country name
+	 */
+	void checkCountryName(String countryName){
 		List temp;
-		if( (countryName != null) && (!countryName.equals("")) && ( !countryName.matches("[a-zA-Z]+") ) )
+
+		if( (countryName != null) && (!countryName.equals("")) && ( !onlyLettersSpaces(countryName) ) )
 		{
 			temp = REP_MAP.get(Utility.HttpCode.REP_HTTP_INVALIDPARAM);
 
 			throw new CustomException( (String)temp.get(1), (HttpStatus) temp.get(0));
 		}
+	}
+	@Override
+	public List<Message> getDataCountryByName(String countryName) {
+		System.out.println(countryName);
+		List temp;
+		checkCountryName(countryName);
 		List<Message> messages = dao.findByName(countryName);
 		if( messages.size() == 0 )
 		{
@@ -51,16 +88,15 @@ public class CovidServiceImpl implements CovidServiceInterface{
 		List temp ;
 		if( Utility.checkDate(date) == null)
 		{
-			System.out.println("INvalid Parramètre" + Utility.checkDate(date) );
 			temp = REP_MAP.get(Utility.HttpCode.REP_HTTP_INVALIDPARAM);
 			throw new CustomException( (String) temp.get(1) ,(HttpStatus) temp.get(0));
 
 		}
 		date = Utility.checkDate(date);
+		checkCountryName(countryName);
 		MessageDTO messageDTO =  dao.findByNameAndDate(countryName, date);
 		if (messageDTO == null)
 		{
-			System.out.println("DATE INEXISTANTE ");
 			temp = REP_MAP.get(Utility.HttpCode.REP_HTTP_DTINEXISTANT);
 			throw new CustomException( (String) temp.get(1) ,(HttpStatus) temp.get(0));
 		}
@@ -71,7 +107,6 @@ public class CovidServiceImpl implements CovidServiceInterface{
 	public MessageDTO getDataCountryByNameToday(String countryName) {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 		LocalDateTime now = LocalDateTime.now();
-		System.out.println(dtf.format(now));
 		return getDataCountryByNameAndDate(countryName, dtf.format
 				(now));
 	}

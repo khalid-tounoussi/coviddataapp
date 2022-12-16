@@ -8,6 +8,9 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.apache.commons.csv.CSVRecord;
 
+/**
+ * The type Message.
+ */
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -22,6 +25,12 @@ public class Message implements Serializable{
     private String recoveredRate;
     private String infectionRate;
 
+    /**
+     * From csv record message.
+     *
+     * @param record the record
+     * @return the message
+     */
     public static Message fromCSVRecord( CSVRecord record){
         String[] data = record.get(0).split(";");
         return new Message(data[0], data[1], data[2], data[3]
