@@ -78,7 +78,7 @@ public class Utility {
      */
     public static String reformatDate(String inDate) {
         String[] date = inDate.split("-");
-
+        if( date.length != 3) return inDate;
         String year = date[0];
         String month = date[1];
         String day = date[2];
