@@ -11,7 +11,7 @@
     <li>To access TodayCountryData :</li><br>
     https://coviddatapp.herokuapp.com/api/todayCountryData?countryName=maroc<br><br>
     
-    <h3>Front with React is accessible from :</h3><br>
+<h3>Front with React is accessible from :</h3><br>
   https://cdosi.vercel.app/<br><br>
   
 <b>DOR and DOD and User stories in project_details.xlsx</b>
