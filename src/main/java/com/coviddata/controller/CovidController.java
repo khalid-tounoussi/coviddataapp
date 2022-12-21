@@ -24,6 +24,7 @@ import static com.coviddata.util.Utility.REP_MAP;
 @RestController
 @RequestMapping("api")
 @Data
+@CrossOrigin
 public class CovidController {
     /**
      * The Service.
