@@ -71,7 +71,6 @@ public class CovidServiceImpl implements CovidServiceInterface{
 	}
 	@Override
 	public List<Message> getDataCountryByName(String countryName) {
-		System.out.println(countryName);
 		List temp;
 		checkCountryName(countryName);
 		List<Message> messages = dao.findByName(countryName);

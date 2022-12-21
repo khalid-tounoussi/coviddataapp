@@ -6,4 +6,4 @@ http://localhost:8080/api/oneCountryDataWithDate?countryName=maroc&date=2022-12-
 
 http://localhost:8080/api/todayCountryData?countryName=france
 
-JACOCO
+JACOCO - Swagger - Schudeled - logs - exceptions - PRod

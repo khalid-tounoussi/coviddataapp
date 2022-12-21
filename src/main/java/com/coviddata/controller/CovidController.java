@@ -33,7 +33,7 @@ public class CovidController {
 
     /**
      * Gets data country by name.
-     *
+     * Cette fonction permet de retoutner les données d'un pays avec countryName pour la date spécifié
      * @param countryName the country name
      * @return the data country by name
      */
